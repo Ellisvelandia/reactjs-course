@@ -11,14 +11,14 @@ function App() {
     setRobots(Data);
   }, []);
 
-  function createRobots(robotName) {
+  function createRobots(robot) {
     setRobots([
       ...robots,
       {
-        name: robotName,
+        name: robot.name,
         id: robots.length,
-        image: "https://robohash.org/robot60",
-        description: "robot del 666 que malote",
+        image: robot.image,
+        description: robot.description,
       },
     ]);
   }
